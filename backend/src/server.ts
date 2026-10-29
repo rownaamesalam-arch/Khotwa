@@ -1,11 +1,6 @@
-import Fastify from "fastify";
-const app = Fastify({logger:true});
+import { buildApp } from "./app.js";
 
-
-app.get("/health",async()=>{
-    return {status:"OK",service:"Khotwa-api"}
-});
-
+const app=buildApp()
 
 const start=async()=>{
     try{
