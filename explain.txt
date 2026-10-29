@@ -1,0 +1,8 @@
+ npm init -y
+ npm install fastify
+ npm install -D typescript tsx @types/node
+ npx tsc --init
+
+ "scripts": {
+    "dev":"tsx watch src/server.ts"
+  },
